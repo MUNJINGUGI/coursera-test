@@ -7,6 +7,22 @@
 <body>
 Coursera is so cool am learning so much! jan 2021
 <br>
-Its january 7th 2021
+Its january 7th 2021 and 
+Next year will be 2021
+
+<script>
+     var count = 0;
+     function cc(card) {
+         if (card <= 6) {count += 1;}
+         else if (card <= 9) {count += 0;}
+         else {count -= 1;}
+         if (count > 0) {return count + " Bet";}
+         else {return count + " Hold";}
+     }
+     while(true) {
+         var card = window.prompt("Please enter a card: ");
+         alert(cc(card));
+     }
+</script>
 </body>
 </html>
